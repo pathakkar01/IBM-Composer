@@ -1,0 +1,16 @@
+.app {
+  width: 90%;
+  max-width: 80rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 3rem auto;
+  background-color: #1e293b;
+  box-sizing: border-box;
+  color: white;
+  box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
+      12px 17px 2px hsla(0, 0%, 0%, 0.14),
+    0px 5px 22px 4px hsla(0, 0%, 0%, 0.12),
+    0px 7px 8px -4px hsla(0, 0%, 0%, 0.2);
+}

@@ -1,0 +1,294 @@
+<div
+  class="center"
+  [ngStyle]="{
+    'align-items': inHomePage == true ? 'center' : 'flex-start',
+    'justify-content': inHomePage == true ? 'center' : 'flex-start'
+  }"
+>
+  <div class="navbar">
+    <div class="logo">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 500 500"
+        xml:space="preserve"
+        width="76"
+        Height="76"
+      >
+        <style type="text/css">
+          .st0 {
+            fill: #e53535;
+          }
+          .st1 {
+            fill: #ffffff;
+          }
+        </style>
+        <g>
+          <path
+            class="st0"
+            d="M499.1,250.1c0,138.1-111.9,250-250,250s-250-111.9-250-250s111.9-250,250-250S499.1,112.1,499.1,250.1"
+          />
+          <g>
+            <path
+              class="st1"
+              d="M95.3,225.9c4.6,0,9.8,0.5,15.8,1.5l1.3,0.2l1.4-9.8l-1.1-0.3c-5.8-1.4-11.6-2.2-17.4-2.2
+			c-20.1,0-29.5,8.6-29.5,27.1v26.3c0,18.5,9.4,27.1,29.5,27.1c5.8,0,11.6-0.8,17.4-2.2l1.1-0.3l-1.4-9.8l-1.3,0.2
+			c-5.2,1-10.5,1.5-15.8,1.5c-13.7,0-18.1-3.9-18.1-16.2v-26.9C77.2,229.8,81.6,225.9,95.3,225.9z"
+            />
+            <path
+              class="st1"
+              d="M166.3,215.3c-19.5,0-30.3,10.1-30.3,28.4v23.5c0,18.3,10.8,28.4,30.3,28.4s30.3-10.1,30.3-28.4v-23.5
+			C196.6,225.4,185.9,215.3,166.3,215.3z M147.5,243.5c0-12,6-17.6,18.8-17.6c12.9,0,18.8,5.6,18.8,17.6v24.1c0,12-6,17.6-18.8,17.6
+			c-12.9,0-18.8-5.6-18.8-17.6V243.5z"
+            />
+            <path
+              class="st1"
+              d="M258.4,215.3c-8.5,0-21,3.9-29.3,7.7l-0.6-6.1h-10.2v77.3h11.5v-59.9c9.4-4.8,21.9-8.1,27.5-8.1
+			c5,0,6.9,1.8,6.9,6.2v61.8h11.4v-60.7C275.5,221.3,269.9,215.3,258.4,215.3z"
+            />
+            <path
+              class="st1"
+              d="M405.2,215.3c-7.5,0-17.1,1.2-23.4,2.9l-1.1,0.3l1.8,9.9l1.3-0.3c8.1-1.6,15.5-2.4,21.9-2.4
+			c12.3,0,16.4,3.1,16.4,12.4v13.3h-20.9c-16.5,0-23.2,6.4-23.2,22c0,14.5,7.1,22.1,20.6,22.1c8.7,0,16.6-2.1,24.3-6.6l0.5,5h10.1
+			v-55.9C433.5,222.8,424.3,215.3,405.2,215.3z M422.1,262.1v16c-6.4,4.4-14.7,7.1-21.6,7.1c-9.4,0-11-3-11-11.5
+			c0-9.2,2.5-11.6,12.1-11.6L422.1,262.1z"
+            />
+            <path
+              class="st1"
+              d="M327.2,215.3c-20.7,0-30,8.5-30,27.5v0.9c0,10.4,3.4,18,10.1,22.6c-5.1,4.4-6.2,9.2-6.2,12.5
+			c0,6,2.8,13.4,15.9,14.5c7.4,0.6,9.7,0.7,14.4,1l5.9,0.4c8.2,0.6,10.8,2.9,10.8,9.6c0,3.4-0.4,8.2-0.4,8.2l0,0.4h11l0-0.3
+			c0-0.1,0.6-5.4,0.6-8.8c0-11.9-6.3-18-19.7-19.1l-5.5-0.4c-5.8-0.4-8.7-0.7-16-1.3c-4.9-0.4-5.6-2.2-5.6-4.1
+			c0-3.1,1.4-5.5,4.9-8.5c3.2,0.6,6.4,0.9,9.6,0.8c19.9,0,30-9.3,30-27.5v-0.9c0-6.7-1.3-12.2-3.9-16.4l8.4-0.7v-8.9H340
+			C336.5,215.8,332.4,215.3,327.2,215.3z M308.4,242.6c0-12.9,4.6-17,18.8-17c14.1,0,18.8,4.3,18.8,17v1.5c0,12.2-5.3,17-18.8,17
+			c-13.9,0-18.8-4.5-18.8-17V242.6z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <h1>Composer API Application</h1>
+    <nav>
+      <ul>
+        <li (click)="goToHomePage()">Home</li>
+        <li (click)="goToDownloadPage()">Download</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="loadig-screen" *ngIf="isLoading == true">
+    <div class="loading"></div>
+    <p>
+      <span *ngIf="this.isGettingSalesforceToken == true">
+        Generating Salesforce Token
+      </span>
+      <span *ngIf="this.isGettingcongaAuthToken == true">
+        Generating CongaAuth Token
+      </span>
+      <span *ngIf="this.isMergingDoc == true"> Generating Document </span>
+    </p>
+  </div>
+  <div class="success-msg" *ngIf="this.isSendSuccesFully == true">
+    <p>
+      Document generation request submitted successfully, Here is
+      Correlation-id:
+      <span>{{ correlationId }}</span>
+    </p>
+    <div class="action">
+      <button type="button" (click)="onReset()">Go Back</button>
+    </div>
+  </div>
+
+  <form
+    (submit)="onFormsubmit()"
+    *ngIf="
+      inHomePage == true && !isLoading == true && !isSendSuccesFully == true
+    "
+  >
+    <div class="form-inputs">
+      <div class="form-controls">
+        <div class="form-controls-grp">
+          <div class="form-control">
+            <label for="project-name">Project Name</label>
+            <input
+              type="text"
+              id="project-name"
+              name="projectName"
+              [(ngModel)]="projectName"
+            />
+          </div>
+          <div class="form-control">
+            <label for="requested-by">Requested By</label>
+            <input
+              type="text"
+              id="requested-by"
+              name="requestedBy"
+              [(ngModel)]="requestedBy"
+            />
+          </div>
+          <div class="form-control">
+            <label for="client-legal-name">Client Legal Number</label>
+            <input
+              type="text"
+              id="client-legal-name"
+              name="clientLegalName"
+              [(ngModel)]="clientLegalName"
+            />
+          </div>
+        </div>
+        <div class="form-controls-grp">
+          <div class="form-control">
+            <label for="pcr-number">PCR Number</label>
+            <input
+              type="text"
+              id="pcr-number"
+              name="pcrNumber"
+              [(ngModel)]="pcrNumber"
+            />
+          </div>
+          <div class="form-control">
+            <label for="valid-until-date">Valid Until Date</label>
+            <input
+              type="date"
+              id="valid-until-date"
+              name="validUntilDate"
+              [(ngModel)]="validUntilDate"
+            />
+          </div>
+          <div class="form-control">
+            <label for="master-bj-id">Master Object Id</label>
+            <input
+              type="text"
+              id="master-bj-id"
+              name="masterObjId"
+              [(ngModel)]="masterObjId"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="product-label">Products:</h3>
+    <table class="products-input">
+      <tr class="products-input-childs">
+        <th class="label">Name</th>
+        <th class="label">Product-code</th>
+        <th class="label">Quantity</th>
+        <th class="label">Price</th>
+      </tr>
+      <div *ngFor="let product of products; let i = index">
+        <tr class="products-input-childs" id="product.id">
+          <td class="form-control">
+            <input
+              type="text"
+              name="productName{{ i }}"
+              [(ngModel)]="product.name"
+            />
+          </td>
+          <td class="form-control">
+            <input
+              type="text"
+              name="productCode{{ i }}"
+              value="product.productCode"
+              [(ngModel)]="product.productCode"
+            />
+          </td>
+          <td class="form-control">
+            <input
+              type="number"
+              min="1"
+              name="quantity{{ i }}"
+              [(ngModel)]="product.quantity"
+            />
+          </td>
+          <td class="form-control">
+            <input
+              type="number"
+              min="1"
+              name="price{{ i }}"
+              [(ngModel)]="product.price"
+            />
+          </td>
+          <td class="actions">
+            <div class="add-more" (click)="onAddProduct()">
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="25px"
+                height="35px"
+                viewBox="0 0 459.325 459.325"
+                style="enable-background: new 0 0 459.325 459.325"
+                xml:space="preserve"
+                fill="#475569"
+              >
+                <g>
+                  <path
+                    d="M459.319,229.668c0,22.201-17.992,40.193-40.205,40.193H269.85v149.271c0,22.207-17.998,40.199-40.196,40.193
+        c-11.101,0-21.149-4.492-28.416-11.763c-7.276-7.281-11.774-17.324-11.769-28.419l-0.006-149.288H40.181
+        c-11.094,0-21.134-4.492-28.416-11.774c-7.264-7.264-11.759-17.312-11.759-28.413C0,207.471,17.992,189.475,40.202,189.475h149.267
+        V40.202C189.469,17.998,207.471,0,229.671,0c22.192,0.006,40.178,17.986,40.19,40.187v149.288h149.282
+        C441.339,189.487,459.308,207.471,459.319,229.668z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="add-more" *ngIf="i !== 0" (click)="onRemoveProduct(i)">
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="25px"
+                height="35px"
+                viewBox="0 0 459.313 459.314"
+                style="enable-background: new 0 0 459.313 459.314"
+                xml:space="preserve"
+                fill="#475569"
+              >
+                <g>
+                  <path
+                    d="M459.313,229.648c0,22.201-17.992,40.199-40.205,40.199H40.181c-11.094,0-21.14-4.498-28.416-11.774
+		C4.495,250.808,0,240.76,0,229.66c-0.006-22.204,17.992-40.199,40.202-40.193h378.936
+		C441.333,189.472,459.308,207.456,459.313,229.648z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </td>
+        </tr>
+      </div>
+    </table>
+
+    <div class="form-actions">
+      <button>Submit</button>
+    </div>
+  </form>
+  <div
+    class="download-screen"
+    [ngStyle]="{ display: inHomePage == true ? 'none' : 'block' }"
+  >
+    <form *ngIf="!inHomePage == true">
+      <div class="form-control">
+        <label for="correlationId">Correlation Id</label>
+        <textarea
+          id="correlationId"
+          rows="4"
+          cols="50"
+          name="correlationId"
+          [(ngModel)]="correlationId"
+        >
+        </textarea>
+      </div>
+      <div class="form-actions">
+        <button (click)="onDownload1()">Download</button>
+      </div>
+    </form>
+  </div>
+</div>

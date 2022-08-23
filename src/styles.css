@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f7e2d6;
+}
